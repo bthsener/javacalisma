@@ -1,4 +1,4 @@
-package dev.batuhansener.java.tutorial.oofp.odev.polymorphism;
+package dev.batuhansener.java.tutorial.oofp.polymorphism.odev;
 
 public class odev1 {
     public static void main(String[] args) {

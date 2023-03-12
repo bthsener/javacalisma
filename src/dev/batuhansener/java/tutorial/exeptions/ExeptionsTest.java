@@ -1,38 +1,32 @@
 package dev.batuhansener.java.tutorial.exeptions;
 
 public class ExeptionsTest {
-//    static int[] dizi = new int[2];
+    public static void main(String[] args) {
+        int[] deneme = new int[5];
 
-    public static void main(String[] args){
-//      ata2();
+        try {
+            Do2();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            System.out.println("sıkıntı yok");
+        }
 
-        Do();
-    }
-
-    static void Do(){
-        Throwable throwable = new Throwable("Merhaba ben HATA!!!");
-
-        throwable.printStackTrace();
-        System.out.println();
-        deneme2(throwable);
-    }
-
-    static void deneme(Throwable throwable){
-        StackTraceElement[] stackTraceElement = throwable.getStackTrace();
-        for(StackTraceElement stackTraceElement1: stackTraceElement){
-            System.out.println(stackTraceElement1.getMethodName());
+        try{
+            deneme[-1] = 5;
+            System.out.println("yazdi");
+        }catch (IndexOutOfBoundsException e){
+            System.out.println("HATAAAAAAAAA!"+ e.getMessage());
         }
     }
 
-    static void deneme2(Throwable throwable){
-        deneme(throwable);
+    static void Do() throws Exception {
+        Exception alo = new Exception("ALOOOOOOOOO");
+
+        throw alo;
     }
 
-//    static void ata(){
-//        dizi[-1] = 0;
-//    }
-//
-//    static void ata2(){
-//        ata();
-//    }
+    static void Do2() throws Exception{
+        Do();
+    }
 }

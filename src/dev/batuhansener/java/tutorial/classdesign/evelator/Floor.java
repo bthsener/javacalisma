@@ -1,11 +1,11 @@
-package dev.batuhansener.java.tutorial.classdesign;
+package dev.batuhansener.java.tutorial.classdesign.evelator;
 
 public enum Floor {
     ENTRANCE(0), FISRT(1), SECOND(2), THIRD(3), FOUR(4);
 
     int intFloor = 0;
 
-    private Floor(int intFloor){
+    Floor(int intFloor){
         this.intFloor = intFloor;
     }
 

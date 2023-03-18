@@ -1,4 +1,4 @@
-package dev.batuhansener.java.tutorial.classdesign;
+package dev.batuhansener.java.tutorial.classdesign.evelator;
 
 public class RealEvelatorTest {
     public static void main(String[] args) {

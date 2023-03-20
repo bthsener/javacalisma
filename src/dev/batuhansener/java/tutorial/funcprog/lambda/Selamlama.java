@@ -14,6 +14,7 @@ public class Selamlama {
     }
 }
 
+@FunctionalInterface
 interface SelamlamaInterface{
     void selamla(String kimi);
 }
